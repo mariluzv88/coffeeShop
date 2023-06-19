@@ -1,0 +1,65 @@
+.menuBanner{
+border: solid orangered;
+height: 18vh;
+display: flex;
+justify-content: space-evenly;
+}
+.menuItem{
+border: solid gray;
+width: 100%;
+}
+.cafeContainer{
+border: solid royalblue;
+display: flex;
+}
+
+.backSection{
+border: solid limegreen;
+width: 10%;
+height: 40vh;
+}
+
+.ladder{
+border: solid magenta;
+
+}
+.employSection{
+border: solid chocolate;
+width: 35%; 
+}
+
+.counter{
+border: solid cyan;
+}
+.custSection{
+    border: solid palegreen;
+    width: 50%;
+}
+
+.customer{
+border: solid green;
+}
+.exitSection{
+    border: solid slateblue;
+    width: 20%;
+}
+
+.door{
+border: solid purple;
+}
+.lobbyContainer{
+border: solid pink;
+}
+
+.tableContainer{
+border: solid yellow;
+}
+
+.chair{
+border: solid red;
+}
+
+.table{
+border: solid blue;
+}
+
