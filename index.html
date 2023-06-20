@@ -10,32 +10,58 @@
         <link rel="stylesheet" href="style.css">
     </head>
     <body>
-        <!-- menuBanner 8 sub Sections-->
+        <!-- menuBanner 8 sub Sections-->                           
         <div class="menuBanner">
-            <div class="menuItem">
-                <img src="https://i.pinimg.com/originals/98/55/00/98550084301f260508b6a9136c094610.gif" alt="" class="menu">
+            <div class="menuItem"onclick="showMenu('coffee')">
+                
+                <img
+                src="https://i.pinimg.com/originals/98/55/00/98550084301f260508b6a9136c094610.gif"
+                alt="" class="menu"id="coffee" >
+                <div class="text">Coffee $5</div>
             </div>
-            <div class="menuItem">
-                <img src="https://thumbs.gfycat.com/SparseFlawedBobcat-size_restricted.gif" alt="" class="menu">
+            <div class="menuItem"onclick="showMenu('tea')">
+                
+                <img
+                src="https://thumbs.gfycat.com/SparseFlawedBobcat-size_restricted.gif"
+                alt="" class="menu" id="tea">
+                <div class="text1">Tea $2</div>
             </div>
-            <div class="menuItem">
-                <img src="https://media2.giphy.com/media/n9R7ykqgM6UUdh5RVP/giphy.gif?cid=6c09b952bkim2wtn8ock7nzjufxymrrjegc8fucu5chjdi46&ep=v1_internal_gif_by_id&rid=giphy.gif&ct=s" alt="" class="menu">
+            <div class="menuItem"onclick="showMenu('choco')">
+                <img
+                src="https://media2.giphy.com/media/n9R7ykqgM6UUdh5RVP/giphy.gif?cid=6c09b952bkim2wtn8ock7nzjufxymrrjegc8fucu5chjdi46&ep=v1_internal_gif_by_id&rid=giphy.gif&ct=s"
+                alt="" class="menu" id="choco">
+                <div class="text2">Hot Chocolate $3</div>
             </div>
-            <div class="menuItem">
-                <img src="https://media1.giphy.com/media/kBHfPMfonjJmM9fpfx/giphy.gif?cid=6c09b952u2w5x4crynbevwtufuqfqp9533xvps8cdzzrw9zr&ep=v1_stickers_related&rid=giphy.gif&ct=s" alt="" class="menu">
+            <div class="menuItem"onclick="showMenu('boba')">
+                <img
+                src="https://media1.giphy.com/media/kBHfPMfonjJmM9fpfx/giphy.gif?cid=6c09b952u2w5x4crynbevwtufuqfqp9533xvps8cdzzrw9zr&ep=v1_stickers_related&rid=giphy.gif&ct=s"
+                alt="" class="menu" id="boba" >
+                <div class="text3">BoBa Tea $6</div>
             </div>
-            <div class="menuItem">
-                <img src="https://cdn.myportfolio.com/01b30176ddf4350fe2d7ee67138c19a4/07d1b685-c61c-4d01-81e4-f97e4ba40a39_rw_600.gif?h=948e88cf06a604284a86602143640575" alt="" class="menu">
+            <div class="menuItem"onclick="showMenu('juice')">
+                <img
+                src="https://cdn.myportfolio.com/01b30176ddf4350fe2d7ee67138c19a4/07d1b685-c61c-4d01-81e4-f97e4ba40a39_rw_600.gif?h=948e88cf06a604284a86602143640575"
+                alt="" class="menu" id="orange">
+                <div class="text4">Orange Juice $7</div>
             </div>
-            <div class="menuItem">
-                <img src="https://images-wixmp-ed30a86b8c4ca887773594c2.wixmp.com/f/b59fb72e-8e98-4702-917e-81d43027710c/d4jr6dg-28cb8251-452a-4940-b833-f91811158323.gif?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ1cm46YXBwOjdlMGQxODg5ODIyNjQzNzNhNWYwZDQxNWVhMGQyNmUwIiwiaXNzIjoidXJuOmFwcDo3ZTBkMTg4OTgyMjY0MzczYTVmMGQ0MTVlYTBkMjZlMCIsIm9iaiI6W1t7InBhdGgiOiJcL2ZcL2I1OWZiNzJlLThlOTgtNDcwMi05MTdlLTgxZDQzMDI3NzEwY1wvZDRqcjZkZy0yOGNiODI1MS00NTJhLTQ5NDAtYjgzMy1mOTE4MTExNTgzMjMuZ2lmIn1dXSwiYXVkIjpbInVybjpzZXJ2aWNlOmZpbGUuZG93bmxvYWQiXX0.hv61Ch4Yc1YV52Kh1ITECeBj09FrXdaFkZ0nMTKmwtc" alt="" class="menu">
+            <div class="menuItem"onclick="showMenu('candy')">
+                <img
+                src="https://images-wixmp-ed30a86b8c4ca887773594c2.wixmp.com/f/b59fb72e-8e98-4702-917e-81d43027710c/d4jr6dg-28cb8251-452a-4940-b833-f91811158323.gif?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ1cm46YXBwOjdlMGQxODg5ODIyNjQzNzNhNWYwZDQxNWVhMGQyNmUwIiwiaXNzIjoidXJuOmFwcDo3ZTBkMTg4OTgyMjY0MzczYTVmMGQ0MTVlYTBkMjZlMCIsIm9iaiI6W1t7InBhdGgiOiJcL2ZcL2I1OWZiNzJlLThlOTgtNDcwMi05MTdlLTgxZDQzMDI3NzEwY1wvZDRqcjZkZy0yOGNiODI1MS00NTJhLTQ5NDAtYjgzMy1mOTE4MTExNTgzMjMuZ2lmIn1dXSwiYXVkIjpbInVybjpzZXJ2aWNlOmZpbGUuZG93bmxvYWQiXX0.hv61Ch4Yc1YV52Kh1ITECeBj09FrXdaFkZ0nMTKmwtc"
+                alt="" class="menu" id="candy">
+                <div class="text5">Candy $1</div>
             </div>
-            <div class="menuItem">
-                <img src="https://media2.giphy.com/media/v1.Y2lkPTc5MGI3NjExZjc2M2M1OWFjMzE0MTZiMzdlMGZkMWZmMDE1ZjA5MGI4OGM3NDE1NSZlcD12MV9pbnRlcm5hbF9naWZzX2dpZklkJmN0PXM/29LbmkA8u0ayPciegQ/giphy.gif" alt="" class="menu">
+            <div class="menuItem"onclick="showMenu('cookie')">
+                <img
+                src="https://media2.giphy.com/media/v1.Y2lkPTc5MGI3NjExZjc2M2M1OWFjMzE0MTZiMzdlMGZkMWZmMDE1ZjA5MGI4OGM3NDE1NSZlcD12MV9pbnRlcm5hbF9naWZzX2dpZklkJmN0PXM/29LbmkA8u0ayPciegQ/giphy.gif"
+                alt="" class="menu" id="cookie">
+                <div class="text6">Cookie $2.50</div>
             </div>
-            <div class="menuItem">
-                <img src="https://thumbs.gfycat.com/ElasticDampLeafcutterant-size_restricted.gif" alt="" class="menu"></div>
-            
+            <div class="menuItem"onclick="showMenu('cupCake')">
+                <img
+                src="https://thumbs.gfycat.com/ElasticDampLeafcutterant-size_restricted.gif"
+                alt="" class="menu" id="cupCake">
+                <div class="text7">Cup Cake $8</div>
+            </div>
         </div>
 
         <!-- cafeContainer 4 sections ladder/ employee(2 sub sections counter 1 ,ounter 2)/ customer/door -->

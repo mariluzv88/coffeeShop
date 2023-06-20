@@ -1,7 +1,17 @@
 *{
     margin: 0px;
 }
-
+@keyframes slide{
+    0%{
+       
+       transform: translateX(-15px) translateY(-15px) ;
+    }
+    100%{
+       transform: translateY(15px);
+       transform: translateX(15px);
+    }
+    
+}
 .menuBanner{
 border: solid thick orangered;
 
@@ -15,9 +25,21 @@ background-color: orangered;
 .menu{
     width: 100%;
     height: 100%;
-  
-   
-    
+}
+#orange,#choco,#cookie,#cupCake,#boba{
+    height: 80%;
+    width: 80%;
+    padding: 20px 0px 0px 20px ;
+}
+#tea,#candy{
+    height: 85%;
+    width: 100%;
+    padding: 0px 0px 10px 0px ;
+}
+#coffee{
+    height: 80%;
+    width: 100%;
+    padding-top: 25px;
 }
 
 .menuItem{
@@ -27,6 +49,11 @@ width: 100%;
 border-radius: 50%;
 background-image: url("https://i.pinimg.com/736x/ac/99/1f/ac991f352e00a1b150f46197fa7d2b21--giraffe-print-free-vectors.jpg");
 background-size: 100% 250%;
+
+
+}
+.menuItem:hover{
+    animation: slide 2s ease-in-out paused;
 }
 .cafeContainer{
 border: solid royalblue;
@@ -129,5 +156,25 @@ width: 25%;
 .table{
 border: solid blue;
 width: 50%;
+}
+
+.mInfo{
+    color: white;
+    font-size: 50px;
+    border: solid red;
+}
+.food{
+    border: solid white;
+}
+.text,.text1,.text2,.text3,.text4,.text5,.text6,.text7{
+    border: solid rgba(255, 255, 255, 0);
+    color: rgb(71, 46, 0);
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 17px;
+   background-color: rgb(251, 255, 5);
+    display: none;
+    border-radius: 100%;
+    text-align: center;
+    margin-top: 14px;
 }
 
